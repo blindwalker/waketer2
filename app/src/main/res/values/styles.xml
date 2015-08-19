@@ -1,0 +1,85 @@
+<resources>
+
+    <style name="CustomTheme"
+        parent="@style/Theme.AppCompat.Light">
+
+        <item name="actionBarSize">65dp</item>
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:actionBarTabTextStyle">@style/MyActionBarTabText</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+
+        <!-- Support library compatibility -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+
+        <item name="actionBarStyle">@style/MyActionBar</item>
+        <item name="actionBarTabTextStyle">@style/MyActionBarTabText</item>
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="MyActionBar"
+        parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+
+        <!-- Support library compatibility -->
+        <item name="titleTextStyle">@style/MyActionBarTitleText</item>
+    </style>
+
+    <!-- ActionBar title text -->
+    <style name="MyActionBarTitleText"
+        parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- ActionBar tabs text -->
+    <style name="MyActionBarTabText"
+        parent="@style/Widget.AppCompat.ActionBar.TabText">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="base_text">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:fontFamily">"sans-serif-thin</item>
+    </style>
+
+    <style name="card_header" parent="base_text">
+        <item name="android:layout_marginLeft">16dp</item>
+    </style>
+
+    <style name="card_content" parent="card_header">
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">"sans-serif</item>
+    </style>
+
+    <style name="small_text">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">"sans-serif-light</item>
+    </style>
+
+    <style name="medium_text">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:fontFamily">"sans-serif-light</item>
+    </style>
+
+    <!--
+            CARDS
+    -->
+    <style name="card">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">307dp</item>
+    </style>
+
+    <style name="card_small" parent="card">
+        <item name="android:layout_height">90dp</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+</resources>

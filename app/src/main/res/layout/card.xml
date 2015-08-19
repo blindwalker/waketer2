@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@color/primary">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:gravity="left|center"
+                android:id="@+id/cardTitle"
+                android:text="Queen"
+                style="@style/card_header"/>
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="8dp"
+                android:layout_marginRight="18dp"
+                android:id="@+id/iconExpand"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_expand"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_height="42dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:gravity="center|left"
+                android:text="09:00"
+                android:id="@+id/cardTime"
+                style="@style/card_content" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/cardSwitch"
+                android:layout_marginRight="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
